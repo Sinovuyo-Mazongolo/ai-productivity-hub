@@ -78,11 +78,15 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { title: "Flow IQ — AI Workplace Productivity Assistant" },
       { name: "description", content: "Flow IQ automates emails, meetings, planning, and research with AI." },
       { name: "author", content: "Flow IQ" },
-      { property: "og:title", content: "Flow IQ" },
-      { property: "og:description", content: "AI workplace productivity assistant." },
+      { property: "og:title", content: "Flow IQ — AI Workplace Productivity Assistant" },
+      { property: "og:description", content: "Flow IQ automates emails, meetings, planning, and research with AI." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "Flow IQ — AI Workplace Productivity Assistant" },
+      { name: "twitter:description", content: "Flow IQ automates emails, meetings, planning, and research with AI." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/45da1f93-a57e-433a-81e2-9290f3a359b2/id-preview-17108a5e--18cdf61a-8269-4d8b-91c5-4156b7027c6a.lovable.app-1780041081790.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/45da1f93-a57e-433a-81e2-9290f3a359b2/id-preview-17108a5e--18cdf61a-8269-4d8b-91c5-4156b7027c6a.lovable.app-1780041081790.png" },
     ],
     links: [
       {
