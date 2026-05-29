@@ -2,14 +2,15 @@ import { createFileRoute } from "@tanstack/react-router";
 import { Link } from "@tanstack/react-router";
 import { Mail, FileText, ListChecks, Search, MessageSquare, Sparkles, ArrowRight } from "lucide-react";
 import { Card } from "@/components/ui/card";
+import heroImage from "@/assets/hero-flowiq.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Dashboard — WorkflowAI" },
-      { name: "description", content: "AI workplace productivity assistant for emails, meetings, planning, and research." },
-      { property: "og:title", content: "WorkflowAI — AI Workplace Productivity Assistant" },
-      { property: "og:description", content: "Automate daily work tasks with AI-powered tools." },
+      { title: "Flow IQ — AI Workplace Productivity Assistant" },
+      { name: "description", content: "Flow IQ is your AI workplace productivity assistant for emails, meetings, planning, and research." },
+      { property: "og:title", content: "Flow IQ — AI Workplace Productivity Assistant" },
+      { property: "og:description", content: "Automate daily work tasks with Flow IQ." },
     ],
   }),
   component: Index,
@@ -26,18 +27,31 @@ const features = [
 function Index() {
   return (
     <div className="p-6 md:p-10 max-w-6xl mx-auto">
-      <div className="rounded-2xl bg-[image:var(--gradient-hero)] p-8 md:p-12 text-primary-foreground shadow-[var(--shadow-elegant)] mb-10 relative overflow-hidden">
-        <div className="absolute -right-10 -top-10 h-48 w-48 rounded-full bg-accent/30 blur-3xl" />
-        <div className="relative">
+      <div className="rounded-2xl bg-[image:var(--gradient-hero)] text-primary-foreground shadow-[var(--shadow-elegant)] mb-10 relative overflow-hidden grid md:grid-cols-2 gap-0">
+        <div className="absolute -right-10 -top-10 h-48 w-48 rounded-full bg-accent/30 blur-3xl pointer-events-none" />
+        <div className="relative p-8 md:p-12">
           <div className="inline-flex items-center gap-1.5 rounded-full bg-white/15 px-3 py-1 text-xs font-medium backdrop-blur">
-            <Sparkles className="h-3 w-3" /> Powered by Lovable AI
+            <Sparkles className="h-3 w-3" /> Powered by AI
           </div>
-          <h1 className="mt-4 text-3xl md:text-4xl font-bold tracking-tight max-w-2xl">
-            Your AI workplace productivity assistant
+          <h1 className="mt-4 text-3xl md:text-4xl font-bold tracking-tight">
+            Meet Flow IQ
           </h1>
+          <p className="mt-2 text-base md:text-lg font-medium text-primary-foreground/90">
+            Your AI workplace productivity assistant
+          </p>
           <p className="mt-3 text-primary-foreground/80 max-w-xl">
             Automate emails, meetings, planning, and research — all from one calm, focused workspace.
           </p>
+        </div>
+        <div className="relative min-h-[220px] md:min-h-0">
+          <img
+            src={heroImage}
+            alt="Professional using Flow IQ on her laptop in a modern office"
+            width={1920}
+            height={1080}
+            className="absolute inset-0 h-full w-full object-cover md:rounded-r-2xl"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-primary/40 to-transparent md:from-primary/30 pointer-events-none" />
         </div>
       </div>
 

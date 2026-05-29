@@ -32,7 +32,7 @@ export function AppSidebar() {
             <Sparkles className="h-5 w-5" />
           </div>
           <div className="group-data-[collapsible=icon]:hidden">
-            <div className="text-sm font-semibold leading-tight">WorkflowAI</div>
+            <div className="text-sm font-semibold leading-tight">Flow IQ</div>
             <div className="text-[11px] text-sidebar-foreground/70">Productivity Suite</div>
           </div>
         </div>

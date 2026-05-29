@@ -75,11 +75,11 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { title: "Flow IQ — AI Workplace Productivity Assistant" },
+      { name: "description", content: "Flow IQ automates emails, meetings, planning, and research with AI." },
+      { name: "author", content: "Flow IQ" },
+      { property: "og:title", content: "Flow IQ" },
+      { property: "og:description", content: "AI workplace productivity assistant." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
@@ -123,7 +123,7 @@ function RootComponent() {
             <header className="h-14 flex items-center gap-3 border-b border-border bg-card/60 backdrop-blur px-4 sticky top-0 z-10">
               <SidebarTrigger />
               <div className="text-sm font-medium text-muted-foreground">
-                AI Workplace Productivity Assistant
+                Flow IQ — AI Workplace Productivity Assistant
               </div>
               <div className="ml-auto hidden md:flex items-center gap-2 text-[11px] text-muted-foreground">
                 <span className="inline-block h-2 w-2 rounded-full bg-accent" />
